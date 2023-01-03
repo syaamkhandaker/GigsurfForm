@@ -1,6 +1,5 @@
 import './App.css';
 import logo from './static/GigsurfLogo.png';
-import {Route, Link, Routes, Navigate} from 'react-router-dom';
  
 const delay = ms => new Promise(
   resolve => setTimeout(resolve, ms)
