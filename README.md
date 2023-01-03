@@ -5,6 +5,9 @@ A online form I had made alongside a EC2 instance running a Java Spring Boot app
 Tech Stack:
 
 FrontEnd: React.js, CSS/Bootstrap, HTML
+
 BackEnd: Node.js, Java Spring Boot
+
 Databases: AWS DynamoDB
+
 Other: AWS S3, AWS API Gateway
