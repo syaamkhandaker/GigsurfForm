@@ -191,10 +191,10 @@ function App() {
               if (!(firstName.value === null || firstName.value === '' || lastName.value === null || lastName.value === '') && phoneNumber.value !== null && phoneNumber.value.length === 14 &&
               email.value !== null && email.value.match(emailRegex)) {
                 if(resume.files.length === 1) {
-                  const bucketName = "gigsurfresumes";
-                  const accessKeyId = "AKIAUFHDV5GBBF7LBQEA";
-                  const secretAccessKey = "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";
-                  const region = "us-east-2";
+                  const bucketName = "";
+                  const accessKeyId = "";
+                  const secretAccessKey = "";
+                  const region = "";
                   const AWS = require("aws-sdk");
                   AWS.config.update({
                     accessKeyId: accessKeyId,
@@ -253,7 +253,7 @@ function App() {
                   })
                 }
                 await delay(1000);
-                fetch("https://damp-sierra-23787.herokuapp.com/https://7j669fyopc.execute-api.us-east-2.amazonaws.com/getStarted?Name=" + firstName.value + "&Number=" + phoneNumber.value).catch((err) => {
+                fetch("" + firstName.value + "&Number=" + phoneNumber.value).catch((err) => {
                   console.log(err);
                 })
                 await delay(1000);
