@@ -1,0 +1,98 @@
+body{
+  scroll-behavior: smooth;
+  background-image: url("/src/static/GigsurfBackground.jpg");
+  height: 1100px;
+  width: 100%;
+
+}
+
+.text-padding{
+  padding-top: 10px;
+}
+
+.textarea{
+  padding-left: 10px;
+}
+
+.set-padding{
+  flex: 1;
+  padding-top: 150px;
+}
+
+.smalltext{
+  padding-top: 10px;
+  font-size: 11px;
+}
+
+.mediumtext{
+  font-size: 12px;
+}
+
+
+.in-between-text-padding{
+  padding-top: 10px;
+}
+
+.horizontalrule {
+  height: 0px;
+  border: none;
+  border-top: 1px solid rgb(207, 207, 207);
+}
+
+.whitepg {
+  background-color: white;
+  z-index: 0;
+  height: min-content;
+  width: 55%;
+  padding: 40px;
+  margin: auto; 
+  flex:none;
+  min-width:fit-content;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+}
+
+.logo-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+  height: 75px;
+  z-index: 1;
+}
+
+.btn-changes {
+  width: 175px;
+  height: 45px;
+}
+
+.error-message{
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nonerror-message{
+  border: 5px;
+  padding: 10px;
+}
+
+.requiredpadding{
+  padding-top: 4px;
+}
+
+.hiddenrequired{
+  display: none;
+  background-color: #F23A3C;
+  width: 150px;
+  padding: 5px 5px;
+  height: 20px;
+  border-radius: 5px;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 575px) {
+  .hiddenrequired{
+    width: 155px;
+  }
+}
