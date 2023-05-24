@@ -219,24 +219,24 @@ function App() {
                       const url = `https://${bucketName}.s3.amazonaws.com/` + firstName.value + lastName.value + resume.files[0].name;
                       var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
                       var params = {
-                        TableName: 'StudentGetStarted',
+                        TableName: 'Table',
                         Item: {
-                          "getStartedId": {
+                          "primaryKey": {
                             "S": "" + new Date().getTime()
                           },
-                          "Email": {
+                          "email": {
                             "S": email.value
                           },
-                          "FirstName": {
+                          "first_name": {
                             "S": firstName.value
                           },
-                          "LastName": {
+                          "last_name": {
                             "S": lastName.value
                           },
-                          "Number": {
+                          "number": {
                             "S": phoneNumber.value
                           },
-                          "ResumeLink": {
+                          "resume": {
                             "S": url
                           }
                         }
@@ -256,7 +256,7 @@ function App() {
                   console.log(err);
                 })
                 await delay(1000);
-                window.location = "https://www.gigsurf.io/faq";
+                window.location = "https://www.google.com";
               } else {
                 if (firstName.value === null || firstName.value === '' || lastName.value === null || lastName.value === '') {
                   nameErrorBox.style.backgroundColor = '#FED6D6'
